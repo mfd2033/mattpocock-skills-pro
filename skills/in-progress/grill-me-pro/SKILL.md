@@ -1,6 +1,6 @@
 ---
 name: grill-me-pro
-description: A relentless interview to sharpen a plan or design, answered by picking options instead of typing.
+description: A relentless interview to sharpen a plan or design, answered by picking options or by typing.
 disable-model-invocation: true
 ---
 
