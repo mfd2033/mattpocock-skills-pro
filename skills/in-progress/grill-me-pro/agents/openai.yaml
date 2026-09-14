@@ -1,0 +1,5 @@
+interface:
+  display_name: "Grill Me Pro"
+  short_description: "Sharpen a plan by picking answers"
+policy:
+  allow_implicit_invocation: false
