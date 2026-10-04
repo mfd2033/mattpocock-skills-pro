@@ -1,0 +1,5 @@
+interface:
+  display_name: "Improve Codebase Architecture Pro"
+  short_description: "Scan for deepening, grill by picking"
+policy:
+  allow_implicit_invocation: false

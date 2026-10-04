@@ -1,0 +1,5 @@
+interface:
+  display_name: "Wayfinder Pro"
+  short_description: "Map a big effort, grill by picking"
+policy:
+  allow_implicit_invocation: false

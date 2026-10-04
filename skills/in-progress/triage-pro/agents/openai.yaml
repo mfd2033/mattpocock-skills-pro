@@ -1,0 +1,5 @@
+interface:
+  display_name: "Triage Pro"
+  short_description: "Triage issues, grill by picking"
+policy:
+  allow_implicit_invocation: false

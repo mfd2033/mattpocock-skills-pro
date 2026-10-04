@@ -8,7 +8,7 @@ The plugin won't give you these. Install one directly:
 npx skills@latest add mattpocock/skills --skill=<name>
 ```
 
-The three `-pro` skills below are local to this fork and are not on skills.sh, so the command above does not reach them.
+The `-pro` skills below are local to this fork and are not on skills.sh, so the command above does not reach them.
 
 - **[loop-me](./loop-me/SKILL.md)**: Grill yourself into implementable workflow specs over multiple sessions, using the current directory as a stateful workspace. User-invoked.
 - **[writing-beats](./writing-beats/SKILL.md)**: Shape an article as a journey of beats, choose-your-own-adventure style. Pick a starting beat, write only that beat, then pivot to the next, until the article reaches a natural end.
@@ -21,10 +21,15 @@ The three `-pro` skills below are local to this fork and are not on skills.sh, s
 - **[grill-me-pro](./grill-me-pro/SKILL.md)**: The `/grill-me` interview with every round asked as option prompts, so you answer by picking options or by typing. User-invoked.
 - **[grill-with-docs-pro](./grill-with-docs-pro/SKILL.md)**: The `/grill-with-docs` interview on those same option-prompt rounds, still writing `CONTEXT.md` and ADRs as it goes. User-invoked.
 - **[grilling-pro](./grilling-pro/SKILL.md)**: The presentation layer that turns a `grilling` round into harness option prompts. Model-invoked.
+- **[wayfinder-pro](./wayfinder-pro/SKILL.md)**: `/wayfinder` with every grilling run on option-prompt rounds. User-invoked.
+- **[triage-pro](./triage-pro/SKILL.md)**: `/triage` with its grill step on option-prompt rounds. User-invoked.
+- **[improve-codebase-architecture-pro](./improve-codebase-architecture-pro/SKILL.md)**: `/improve-codebase-architecture` with its grilling loop on option-prompt rounds. User-invoked.
+- **[loop-me-pro](./loop-me-pro/SKILL.md)**: `/loop-me` with its grilling session on option-prompt rounds. User-invoked.
+- **[ask-matt-pro](./ask-matt-pro/SKILL.md)**: `/ask-matt` routing the grill flows to the `-pro` twins. User-invoked.
 
 ## Graduating one of these
 
-A move into `engineering/` or `productivity/` carries the wiring this bucket skips: the `.claude-plugin/plugin.json` entry, the top-level and bucket `README`s, a docs page at `docs/<bucket>/<name>.md`, and a route in `ask-matt` wherever the skill is user-reachable. The `-pro` trio also carries two debts of its own:
+A move into `engineering/` or `productivity/` carries the wiring this bucket skips: the `.claude-plugin/plugin.json` entry, the top-level and bucket `README`s, a docs page at `docs/<bucket>/<name>.md`, and a route in `ask-matt` wherever the skill is user-reachable. The `-pro` family also carries two debts of its own:
 
 - Re-argue the harness tool naming against the 1.2.3 convention that removed Claude Code's tool names from instructions (the reasoning is in [0003-grilling-rounds-as-harness-option-prompts.md](./adr/0003-grilling-rounds-as-harness-option-prompts.md)), then move that ADR to `.agents/adr/`.
 - Re-point the skills-manager source with `skills set-source <name> --git-url <repo> --subpath skills/<bucket>/<name>`, since a bucket move breaks the path the library was installed from.

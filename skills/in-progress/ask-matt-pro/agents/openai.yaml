@@ -1,0 +1,5 @@
+interface:
+  display_name: "Ask Matt Pro"
+  short_description: "Route to the pro skills"
+policy:
+  allow_implicit_invocation: false
